@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusForge — Yashwant Tripathi</title>
+    <meta name="description" content="FocusForge — a productivity and study-management platform for college students, built by Yashwant Tripathi.">
+    <meta name="author" content="Yashwant Tripathi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+   <div id="bg-aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="bg-grid"></span>
+</div>
+    <div id="cursor-glow"></div>
+
+    <div id="preloader">
+        <div class="loader-logo">YASHWANT<span>.</span></div>
+        <div class="loader-bar-bg">
+            <div class="loader-bar-fill" id="loader-progress"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html#home" class="brand-logo">YT<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right-btn">
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+            </div>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home" class="mobile-nav-link">Home</a>
+        <a href="index.html#about" class="mobile-nav-link">About</a>
+        <a href="index.html#skills" class="mobile-nav-link">Skills</a>
+        <a href="index.html#projects" class="mobile-nav-link">Projects</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;">Let's Talk</a>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="section-padding project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <i class="fa-solid fa-arrow-left-long"></i> Back to all projects
+            </a>
+
+            <div class="project-hero-top">
+                <div>
+                    <div class="project-kicker">Productivity Platform</div>
+                    <h1 class="project-hero-title">FocusForge</h1>
+                    <p class="project-hero-summary">A modern productivity and study-management platform designed for college students, built to keep assignments, deadlines and study sessions organized in one clean dashboard.</p>
+                    <div class="project-hero-actions">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <span>View Live</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/yashwant-tripathi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-meta-row">
+                <div class="project-meta-pill">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Frontend Developer</span>
+                </div>
+                <div class="project-meta-pill">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Personal Project</span>
+                </div>
+                <div class="project-meta-pill">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">Add timeline</span>
+                </div>
+                <div class="project-meta-pill">
+                    <span class="meta-label">Status</span>
+                    <span class="meta-value">In Development</span>
+                </div>
+            </div>
+
+            <div class="project-cover">
+                <img src="images/project1.png" alt="FocusForge preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Body -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="project-body-grid">
+                <div>
+                    <div class="project-block">
+                        <h3>Overview</h3>
+                        <p>FocusForge was built to solve a problem most college students run into: juggling assignments, study goals and deadlines across too many scattered notes and apps.</p>
+                        <p>The platform brings task tracking, a focus timer and a study dashboard together in a single, distraction-free interface, so students can see what's due and get straight into a focused session.</p>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-circle-check"></i><span><strong>Task & deadline tracker —</strong> add assignments and coursework with due dates, and see what's coming up next at a glance.</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i><span><strong>Focus timer —</strong> a Pomodoro-style session timer to structure study blocks and short breaks.</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i><span><strong>Progress dashboard —</strong> a clean overview of completed vs. pending tasks to keep momentum visible.</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i><span><strong>Responsive layout —</strong> built mobile-first so it works as well on a phone between classes as it does on a laptop.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Gallery</h3>
+                        <div class="project-gallery">
+                            <img src="images/project1.png" alt="FocusForge screen one">
+                            <img src="images/project1.png" alt="FocusForge screen two">
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="project-sidebar">
+                    <div class="sidebar-card">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-pill-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h4>Project Details</h4>
+                        <ul class="sidebar-list">
+                            <li><span>Category</span><span>Personal Project</span></li>
+                            <li><span>Platform</span><span>Web</span></li>
+                            <li><span>Focus</span><span>Productivity & UI</span></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="project-nav-footer">
+                <a href="project4.html" class="project-nav-link">
+                    <span class="nav-dir"><i class="fa-solid fa-arrow-left-long"></i> Previous</span>
+                    <span class="nav-title">Web Application</span>
+                </a>
+                <a href="project2.html" class="project-nav-link align-right">
+                    <span class="nav-dir">Next <i class="fa-solid fa-arrow-right-long"></i></span>
+                    <span class="nav-title">RideGo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
